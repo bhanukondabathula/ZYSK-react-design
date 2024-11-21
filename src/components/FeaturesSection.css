@@ -1,0 +1,152 @@
+
+.unique-features-section {
+  margin: 0 auto;
+  padding:20px 30px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-top: 80px;
+}
+
+
+.unique-features-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.features-image{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.unique-features-badge {
+  display: inline-block;
+  color: #5e3bae;
+  border: 1px solid violet;
+  background-color: rgb(236, 217, 236);
+
+  padding:10px 14px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 35px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.unique-features-header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+  line-height: 1.3;
+}
+
+.unique-features-header p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+.features-desktop-image{
+  display: none;
+}
+.features-mobile-image{
+  width: 90%;
+}
+
+
+.unique-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.unique-feature-item {
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.unique-feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.unique-feature-icon {
+  font-size: 2rem;
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+.unique-feature-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.unique-feature-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.unique-learn-more {
+  font-size: 0.85rem;
+  color: #6d2685;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.unique-learn-more:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .unique-features-section{
+    padding: 50px 80px;
+  }
+  .unique-features-header h1 {
+    font-size: 2rem;
+  }
+
+  .unique-features-header p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+
+  .features-mobile-image{
+    display: none;
+  }
+  .features-desktop-image{
+    display: block;
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .unique-features-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .unique-features-header p {
+    font-size: 1.1rem;
+  }
+
+
+  .unique-features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .unique-feature-item {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+}

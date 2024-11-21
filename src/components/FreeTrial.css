@@ -1,0 +1,85 @@
+
+.free-trial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:60px 20px;
+    background-color: #f9f9fc; 
+  }
+  
+  .free-trial-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1a202c; 
+  }
+  
+  .free-trial-container p {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 20px;
+  }
+  
+
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .learn-more-btn-large,
+  .get-started-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .learn-more-btn-large {
+    background-color: white;
+    color: #1f1f20; 
+    border: 1px solid #d1d5db;
+  }
+  .learn-more-btn-small{
+    display: none;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #f3f4f6; 
+  }
+  
+  .get-started-btn {
+    background-color: #752a86;
+    font-size: 18px;
+    color: white;
+    border: none;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #5a52e0; 
+  }
+  
+  
+  @media (max-width: 578px) {
+    .button-group {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .learn-more-btn-small{
+      display: block;
+      background-color: white;
+      color: #181818; 
+      border: 1px solid #d1d5db;
+      padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .learn-more-btn-large{
+      display: none;
+    }
+  }
+  
